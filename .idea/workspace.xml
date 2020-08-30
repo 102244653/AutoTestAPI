@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="563fa3c2-ab66-4ccb-9969-c0acf2f01532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/table_module/table_enum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actuator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/globalvar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/bf_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/bf_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/init_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/login_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/login_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/suit_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/suit_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_module/table_enum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_result/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/readconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hleper/check_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hleper/check_result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table_module/login_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_module/login_table.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/table_module/login_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="406">
+              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -49,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/execute.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="656">
               <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
@@ -58,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="621">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -185,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/config/config.ini" />
         <option value="$PROJECT_DIR$/src/table_module/bf_table.py" />
         <option value="$PROJECT_DIR$/src/http/http_request.py" />
-        <option value="$PROJECT_DIR$/src/table_module/login_table.py" />
         <option value="$PROJECT_DIR$/src/case_module/result_module.py" />
         <option value="$PROJECT_DIR$/src/config/globalvar.py" />
         <option value="$PROJECT_DIR$/src/hleper/check_result.py" />
@@ -194,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/result_module/creat_excel_report.py" />
         <option value="$PROJECT_DIR$/src/hleper/send_email.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/table_module/login_table.py" />
       </list>
     </option>
   </component>
@@ -224,7 +211,19 @@
               <item name="AutoTestAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTestAPI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hleper" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTestAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTestAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="result_module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTestAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTestAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="table_module" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,25 +393,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598769461966</updated>
-      <workItem from="1598769463306" duration="31822000" />
+      <workItem from="1598769463306" duration="32935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31822000" />
+    <option name="totallyTimeSpent" value="32935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -536,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/table_module/login_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/result_module/result_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -580,16 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/execute.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/result_module/creat_excel_report.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -613,10 +592,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="621">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table_module/login_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -45,4 +45,4 @@ class LoginModule(LoginBase, Base):
 
     @property
     def to_body(self):
-        return {"username": self.username, "password": self.password}
+        return {"username": self.username, "password1": self.password}
