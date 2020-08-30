@@ -37,6 +37,9 @@ class ReadConfig(object):
         finally:
             return uri
 
+    def get_host(self, param):
+        return self.cf.get('evn', param)
+
     # def read_json(self, param):
     #     """
     #     读取json文件

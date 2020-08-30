@@ -2,7 +2,7 @@ from datetime import datetime
 from sqlalchemy import Column, String, Integer, SmallInteger
 from sqlalchemy.ext.declarative import declarative_base
 
-from src.case_module.base import Base
+from src.table_module.base import Base
 
 SuitBase = declarative_base()
 

@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from src.case_module.suit_table import SuitBase
+from src.table_module.suit_table import SuitBase
 from src.config.readconfig import config
 
 

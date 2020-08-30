@@ -15,6 +15,13 @@ class Base:
                 result[key] = getattr(self, key)
         return result
 
+    @property
+    def to_list(self):
+        _res = []
+        for x in self.__dict__.values():
+            _res.append(x)
+        return _res
+
 
 
 
