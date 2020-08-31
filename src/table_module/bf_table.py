@@ -17,7 +17,7 @@ class BfModule(BfBase, Base):
     request_method = Column(String(6), nullable=False)  # 请求方式
     request_body = Column(String(250), nullable=False)  # 请求内容
     expect_result = Column(String(100), nullable=False)  # 预期结果
-    key_words = Column(String(100))  # 传递给下一个接口的参数   [username,password,token]
+    key_words = Column(String(100))  # 传递给下一个接口的参数   [data/1/username,password,token/2]
     status = Column(SmallInteger, default=1)  # 状态：1-有效 ，0-无效
     update_time = Column(Integer)  # 更新时间
 

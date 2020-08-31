@@ -52,14 +52,13 @@ def read_case_by_table(evn, table_name):
 
 def execute_case(table_name, case_list):
     for case in case_list:
-        GlobalVar.set_allcase(case.case_name)
         if table_name == 'bf_case':
             GlobalVar.set_bfcase(case.case_name)
         else:
             GlobalVar.set_fpcase(case.case_name)
         try:
             if table_name == 'bf_case' and '$' in case.request_body:
-                case.request_body = replace_param_in_json(case.request_body)
+                case.request_body = replace_param_in_json(case.request_body, case.key_words)
                 GlobalVar.delete_response()
             if case.request_method == 'get':
                 code, case.response_data = auto_get(case.url+case.request_body)
@@ -75,4 +74,4 @@ def execute_case(table_name, case_list):
                 GlobalVar.set_passcase(case.case_name)
             else:
                 GlobalVar.set_failcase(case.case_name)
-
+        GlobalVar.set_allcase(case)

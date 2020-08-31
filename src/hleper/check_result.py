@@ -1,5 +1,7 @@
 import json
 
+import requests
+
 from src.config.globalvar import GlobalVar
 
 
@@ -27,18 +29,19 @@ def replace_param_in_json(body, keywords):
     """
     替换json里面的参数化字段
     :param body:
-    :param param:
+    :param keywords:[]
     :return:
     """
     if GlobalVar.get_response() is None or keywords is None:
         return body
     else:
         res = GlobalVar.get_response()
-        _var = dict()
         for key in keywords:
-            _var[key] = read_json_by_key(key, res)
-        for key, value in _var.items():
-            body = body.replace("$"+key, value)
+            try:
+                value = read_json_by_key(key, res)
+                body = body.replace("$" + key, value)
+            except Exception as e:
+                print('参数替换错误：'+key)
         return json.dumps(body)
 
 
@@ -49,9 +52,37 @@ def check_result(response, expect):
     :param expect:预期结果 [()]
     :return:pass/fail
     """
-    result = ''
+    fail_time = 0
+    for e in expect:
+        try:
+            check_type = e[0]
+            check_key = e[1]
+            check_value = e[2]
+        except Exception as e1:
+            print('预期结果解析错误：'+str(e))
+        try:
+            if check_type == 'equals' and check_value != read_json_by_key(check_key, response):
+                fail_time += 1
+            elif check_type == 'start-with' and not read_json_by_key(check_key, response).startswith(check_value):
+                fail_time += 1
+            elif check_type == 'end-with' and not read_json_by_key(check_key, response).endswith(check_value):
+                fail_time += 1
+            elif check_type == 'contain' and check_value not in read_json_by_key(check_key, response):
+                fail_time += 1
+        except Exception as e2:
+            print('检查类型：'+check_type+'不存在')
+    if fail_time != 0:
+        return 'fail'
+    else:
+        return 'pass'
 
 
-
-def read_json_by_key(key, json):
-    return ''
+def read_json_by_key(key, res):
+    if type(res) == 'str':
+        res = json.loads(res)
+    key = key.split('/')
+    for k in key:
+        if k.isdigit():
+            k = int(k)
+        res = res[k]
+    return res
