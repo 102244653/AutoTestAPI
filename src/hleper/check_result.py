@@ -1,7 +1,4 @@
 import json
-
-import requests
-
 from src.config.globalvar import GlobalVar
 
 

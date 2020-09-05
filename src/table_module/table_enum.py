@@ -2,7 +2,6 @@ from src.table_module.bf_table import BfModule
 from src.table_module.init_db import session
 from src.table_module.login_table import LoginModule
 from src.table_module.suit_table import SuitModule
-from sqlalchemy.sql import func
 
 
 class TableDict:
